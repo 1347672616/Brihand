@@ -1,0 +1,107 @@
+.banner {
+    width: 100%;
+    height: 50rem;
+    position: relative;
+
+    .back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: -1;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .container {
+        position: relative;
+
+        .title {
+            position: absolute;
+            top: 13rem;
+            left: 0;
+            color: #ffffff;
+
+            h3 {
+                font-size: 4.8rem;
+
+            }
+
+            div {
+                margin-top: 3rem;
+                font-size: 2.4rem;
+            }
+        }
+    }
+    @media screen and (max-width:650px) {
+        &{
+            .container{
+                .title{
+                    h3{
+                        font-size:4rem ;
+                    }
+                    div{
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// 公司簡介
+.introduce {
+    .container {
+        h3 {
+            width: 100%;
+            text-align: center;
+            position: relative;
+            margin-top: 10rem;
+            font-size: 3rem;
+            color: #333333;
+
+            &::after {
+                position: absolute;
+                top: 140%;
+                left: 48%;
+                content: "";
+                width: 4rem;
+                height: 1px;
+                background-color: #134b9f;
+            }
+        }
+
+        .new {
+            width: 100%;
+            margin-top: 3.2rem;
+            text-indent: 2rem;
+            font-size: 1.6rem;
+            color: #999999;
+
+            &:nth-of-type(1) {
+                margin-top: 9rem;
+            }
+
+        }
+
+        .back {
+            width: 100%;
+            height: 64rem;
+            margin-top: 5.5rem;
+            margin-bottom: 14rem;
+
+            img {
+                width: 100%;
+                height: 64rem;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,126 @@
+/* 新聞 */
+.new {
+    .container {
+        .title {
+            width: 100%;
+            text-align: center;
+
+            h3 {
+                margin-top: 9.8rem;
+                font-size: 2rem;
+                color: #333333;
+            }
+
+            .text {
+                margin-top: 2rem;
+                font-size: 1rem;
+                color: #b3b3b3;
+
+            }
+
+        }
+
+        .article {
+            font-size: 1.6rem;
+            color: #666666;
+
+            div {
+
+                &:nth-child(1) {
+                    text-indent: 3rem;
+                    line-height: 3rem;
+                    margin-top: 6rem;
+                }
+
+                &:nth-child(2){
+                    line-height: 3rem;
+                    text-indent: 3rem;
+                    margin-top: 3rem;
+                }
+            }
+        }
+
+        .back {
+            width: 100%;
+            height: 54rem;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .articletwo{
+            font-size: 1.6rem;
+            color: #666666;
+            padding-bottom: 12rem;
+            border-bottom: 1px dashed #ccc;
+
+            div {
+
+                &:nth-child(1) {
+                    text-indent: 3rem;
+                    line-height: 3rem;
+                    margin-top: 5.5rem;
+                }
+
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4){
+                    line-height: 3rem;
+                    text-indent: 3rem;
+                    margin-top: 3rem;
+                }
+            }
+        }
+        .page{
+            width: 100%;
+            margin-top: 9rem;
+            margin-bottom: 15rem;
+            display: flex;
+            justify-content: space-between;
+            a{
+                font-size: 1.6rem;
+                display: block;
+                width:30% ;
+                height: 4.2rem;
+                text-align: center;
+                line-height: 4.2rem;
+                border: 1px solid #999999;
+
+                &:hover{
+                    text-decoration: none;
+                    background-color: #134b9f;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+    @media screen and(max-width:600px) {
+        &{
+            .container{
+                .title{
+                    h3{
+                        font-size: 1.5rem;
+                    }
+                    .text{
+                        font-size: .7rem;
+                    }
+                }
+                .article{
+                    font-size: 1.2rem;
+                }
+                .articletwo{
+                    font-size: 1.2rem;
+                }
+                .page{
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    a{
+                        font-size: 1rem;
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+
+}

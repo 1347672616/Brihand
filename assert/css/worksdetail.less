@@ -1,0 +1,104 @@
+// 工作詳細
+.work {
+    .container {
+        .title {
+            width: 100%;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5rem;
+
+            h3 {
+                padding-top: 9rem;
+                font-size: 3rem;
+                color: #333333;
+            }
+
+            div {
+                padding-top: 3rem;
+                font-size: 1.8rem;
+                color: #666666;
+            }
+        }
+
+        .require {
+            h3 {
+                position: relative;
+                font-size: 1.8rem;
+                padding-top: 6rem;
+                padding-bottom: 3rem;
+                font-weight: 600;
+                text-indent: .7rem;
+                color: #333333;
+
+                &::before {
+                    position: absolute;
+                    left: 0;
+                    top: 56%;
+                    content: "";
+                    width: .4rem;
+                    height: 1.9rem;
+                    background-color: #134b9f;
+
+                }
+            }
+
+            div {
+                font-size: 1.6rem;
+                line-height: 3.5rem;
+                color: #333333;
+                // height: 3.7rem;
+            }
+        }
+
+        .upload {
+            width: 100%;
+            padding: 7rem 0 15rem 0;
+            display: flex;
+
+            input {
+                width: 15%;
+                height: 6rem;
+                margin-right: 5%;
+                text-align: center;
+                line-height: 6rem;
+                border: none;
+                font-size: 1.8rem;
+                color: #ffffff;
+                background-color: #666666;
+
+                &:hover {
+                    background-color: #134b9f;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:700px) {
+        & {
+            .container {
+                .title{
+                    h3{
+                        font-size: 2rem;
+
+                    }
+                    div{
+                        font-size: 1.5rem;
+                    }
+                }
+                .require {
+                    h3{
+                        font-size: 1.5rem;
+                    }
+                    div {
+                       font-size: 1.3rem;
+
+                    }
+                }
+                .upload{
+                    input{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

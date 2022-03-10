@@ -1,0 +1,49 @@
+/* 頭部 */
+
+.navbar-brand {
+    padding: 0;
+    height: 8rem;
+}
+.navbar-nav li a{
+    line-height: 5rem;
+    font-size: 1.6rem;
+    padding: 1.5rem 2rem;
+    border-bottom:1px solid transparent ;
+}
+
+.navbar-default .navbar-nav li a:hover{
+    color: #134b9f;
+    border-bottom:1px solid #134b9f ;
+
+}
+
+
+.navbar-nav li:nth-child(6) a{
+    color: #134b9f;
+}
+.navbar-nav li:nth-child(6) span{
+    margin-right: .5rem;
+}
+.navbar-nav li:nth-child(7) a {
+    display: inline-block;
+    padding: 15px 1rem;
+    /* padding: 0; */
+}
+.navbar-nav li:nth-child(7) a:nth-child(1){
+    position: relative;
+    color: #134b9f;
+    padding-left: 2rem;
+}
+.navbar-nav li:nth-child(7) a:nth-child(1)::after {
+    position: absolute;
+    content: "";
+    width: .16rem;
+    height: 2rem;
+    right: -1px;
+    top: 3rem;
+    background-color: #5e5e5e;
+}
+
+h3 {
+    font-size: 1rem;
+}
