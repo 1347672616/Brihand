@@ -98,9 +98,9 @@ a:hover{
 
 @font-face {
     font-family: 'iconfont';
-    src: url('/assert/fonts/iconfont.woff2?t=1646732870653') format('woff2'),
-         url('/assert/fonts/iconfont.woff?t=1646732870653') format('woff'),
-         url('/assert/fonts/iconfont.ttf?t=1646732870653') format('truetype');
+    src: url('../fonts/iconfont.woff2?t=1646732870653') format('woff2'),
+         url('../fonts/iconfont.woff?t=1646732870653') format('woff'),
+         url('../fonts/iconfont.ttf?t=1646732870653') format('truetype');
   }
   .iconfont {
     font-family: "iconfont" !important;
