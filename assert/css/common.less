@@ -1,5 +1,5 @@
 /* 頭部 */
-.navbar-toggle{
+.navbar-toggle {
     margin: 23px 5px;
 }
 
@@ -81,74 +81,135 @@
 }
 
 
-// 大圖展示
 .banner {
     width: 100%;
-    height: 50rem;
     position: relative;
 
     .back {
-        position: absolute;
         width: 100%;
-        height: 100%;
-        top: 0;
-        z-index: -1;
+        height: auto;
 
         img {
             width: 100%;
-            height: 100%;
-        }
-    }
 
-    .container {
-        position: relative;
-
-        .title {
-            position: absolute;
-            top: 13rem;
-            left: 0;
-            color: #ffffff;
-
-            h3 {
-                font-size: 4.8rem;
-
-            }
-
-            div {
-                margin-top: 3rem;
-                font-size: 2.4rem;
+            &:nth-child(2) {
+                display: none;
             }
         }
     }
-    @media screen and (max-width:650px) {
-        &{
-            .container{
-                .title{
-                    h3{
-                        font-size:4rem ;
+
+
+
+    .title {
+        position: absolute;
+        top: 30%;
+        left: 15%;
+        color: #ffffff;
+
+        h3 {
+            font-size: 4.8rem;
+
+        }
+
+        div {
+            margin-top: 3rem;
+            font-size: 2.4rem;
+        }
+    }
+
+
+    @media screen and (max-width:1300px) {
+        & {
+            .title {
+                h3 {
+                    font-size: 3.8rem;
+                }
+
+                div {
+                    font-size: 1.8rem;
+                }
+            }
+
+        }
+    }
+
+    @media screen and (max-width:1000px) {
+        & {
+            .title {
+                h3 {
+                    font-size: 2.7rem;
+                }
+
+                div {
+                    font-size: 1.4rem;
+                    margin-top: 2.5rem;
+
+                }
+            }
+
+        }
+    }
+
+    @media screen and (max-width:760px) {
+        & {
+            .back {
+                img {
+                    &:nth-child(1) {
+                        display: none;
                     }
-                    div{
-                        font-size: 2.4rem;
+
+                    &:nth-child(2) {
+                        display: block;
                     }
                 }
             }
+
+            .title {
+                h3 {
+                    font-size:4rem;
+                }
+
+                div {
+                    font-size: 2rem;
+                    margin-top: 2.5rem;
+
+                }
+            }
+
         }
     }
-    @media screen and (max-width:500px) {
-        &{
-            .container{
-                .title{
-                    h3{
-                        font-size:3.5rem ;
+    @media screen and (max-width:760px) {
+        & {
+            .back {
+                img {
+                    &:nth-child(1) {
+                        display: none;
                     }
-                    div{
-                        font-size: 1.8rem;
+
+                    &:nth-child(2) {
+                        display: block;
                     }
                 }
             }
+
+            .title {
+                h3 {
+                    font-size: 3rem;
+                }
+
+                div {
+                    font-size: 1.5rem;
+                    margin-top: 2.5rem;
+
+                }
+            }
+
         }
     }
+
+    
 }
+
 
 // 足部
 footer {
@@ -184,7 +245,7 @@ footer {
         }
 
         .number {
-            width: 40%;
+            width: 100%;
             margin: 0 auto;
 
             margin-top: 3.7rem;
@@ -252,11 +313,58 @@ footer {
 
     }
 
+    @media screen and (max-width:400px) {
+        & {
+            .container {
+                .shortcar {
+                    div {
+
+                        &:nth-child(1),
+                        &:nth-child(2),
+                        &:nth-child(3) {
+                            width: 100%;
+                            text-align: center;
+                        }
+
+                        &:nth-child(2) {
+                            padding: 2rem 0;
+                        }
+
+                        &:nth-child(4),
+                        &:nth-child(5) {
+                            width: 100%;
+                            margin-top: 2rem;
+                            text-align: center;
+                        }
+
+                        a {
+                            display: block;
+                            padding: 0 1rem;
+
+
+                        }
+
+
+
+                    }
+                }
+
+                .number {
+                    div {
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+
+
+    }
+
 }
 
 /*返回顶部*/
 
-#back{
+#back {
     position: fixed;
     right: 0;
     bottom: 2rem;
@@ -266,34 +374,35 @@ footer {
     transform: scale(0);
     opacity: 0;
 
-    &:hover{
-        animation:  rubberBand 1s;
+    &:hover {
+        animation: rubberBand 1s;
     }
+
     @keyframes rubberBand {
         from {
             transform: scale3d(1, 1, 1);
         }
-    
+
         30% {
             transform: scale3d(1.25, 0.75, 1);
         }
-    
+
         40% {
             transform: scale3d(0.75, 1.25, 1);
         }
-    
+
         50% {
             transform: scale3d(1.15, 0.85, 1);
         }
-    
+
         65% {
             transform: scale3d(.95, 1.05, 1);
         }
-    
+
         75% {
             transform: scale3d(1.05, .95, 1);
         }
-    
+
         to {
             transform: scale3d(1, 1, 1);
         }
