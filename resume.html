@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assert/css/bootstrap.css" />
+    <link rel="stylesheet" href="./assert/css/reset.css" />
+    <link rel="stylesheet/less" href="./assert/css/common.less" />
+    <link rel="stylesheet/less" href="./assert/css//resume.less" />
+</head>
+
+<body>
+    <!-- 頭部 -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a id="home" class="navbar-brand" href="#"><img src="./assert/images/logo_02.png" alt=""></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./introduce.html">关于Brihand</a></li>
+                    <li><a href="./new.html">新闻动态</a></li>
+                    <li><a href="./work.html">招聘岗位</a></li>
+                    <li><a href="./contact.html">加入我们</a></li>
+                    <li><a href="">
+                            <span class="iconfont ">&#xe8ad;</span>
+                            400-027-888</a></li>
+                    <li>
+                        <a href="">简体</a>
+                        <a href=""> ENG</a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- 簡歷表單 -->
+    <div class="resume">
+        <div class="container">
+            <h3 class="title">填写简历</h3>
+            <form action="">
+                <div class="name">
+                    <div class="left">
+                        <label for="">姓名：</label>
+                        <input type="text" required />
+                    </div>
+                    <div class="right">
+                        <label for="性别："></label>
+                        <input type="radio" name="sex" id="chk1" required />
+                        <label for="chk1">男</label>
+                        <input type="radio" name="sex" id="chk1" required />
+                        <label for="chk1">女</label>
+                    </div>
+                </div>
+                <input type="submit" value="上傳">
+            </form>
+            <div class="other"></div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+<!-- 引入bootstrap 依赖的 jquery文件 -->
+<script src="./assert/js/jquery.min.js"></script>
+<!-- 引入bootstrap框架的脚本文件 -->
+
+<script src="./assert/js/bootstrap.min.js"></script>
+<!-- 引入less编译器 -->
+<script src="./assert/js/less.min.js"></script>

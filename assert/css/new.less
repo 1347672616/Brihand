@@ -82,7 +82,7 @@
                         border-right: 1px solid #ccc;
 
                         .back {
-                            width: 60%;
+                            width: 65%;
                             height: 15rem;
 
                             img {
@@ -92,7 +92,7 @@
                         }
 
                         .time {
-                            width: 30%;
+                            width: 29%;
 
                             div {
                                 &:nth-child(1) {
@@ -159,17 +159,20 @@
                 }
             }
         }
-        .page{
+
+        .page {
             width: 100%;
             margin-top: 5.7rem;
             margin-bottom: 15rem;
             display: flex;
             justify-content: center;
-            a{
+
+            a {
                 font-size: 1.6rem;
                 color: #808080;
                 padding: 0 1.5rem;
-                &:hover{
+
+                &:hover {
                     color: #134b9f;
                     text-decoration: none;
                 }
@@ -187,23 +190,38 @@
                     .new {
                         .list {
 
-                            // flex-wrap: wrap;
+                            flex-wrap: wrap;
+                            &:hover .left{
+                                width: 100%;
+                            }
+                            &:hover .center{
+                                width: 100%;
+                            }
+                            &:hover .right{
+                                width: 100%;
+                            }
+
+
+
+
 
                             .left {
+                                width: 100%;
+                                border-right: none;
+
                                 .back {
-                                    display: none;
+                                    // display: none;
+                                    width: 50%;
                                 }
 
                                 .time {
                                     width: 100%;
                                     text-align: center;
                                 }
+
                             }
 
-                            // .center,
-                            // .right {
-                            //     width: 50%;
-                            // }
+                        
                         }
                     }
                 }
@@ -227,32 +245,30 @@
 
                         .list {
 
-                            flex-wrap: wrap;
-                            &:hover .left {
-                                width: 50% ;
-                            }
-                            &:hover .center{
-                                width: 50% ;
-                            }
-                            &:hover .right{
-                                width: 100% ;
-                            }
-                            .left {
-                                width: 45%;
+                            // flex-wrap: wrap;
 
-                               
+                            // &:hover .left {
+                            //     width: 50%;
+                            // }
 
-                            }
-                            
+                            // &:hover .center {
+                            //     width: 50%;
+                            // }
+
+                            // &:hover .right {
+                            //     width: 100%;
+                            // }
+
+
 
                             .center {
-                                width: 50%;
+                                width: 100%;
                             }
 
                             .right {
                                 width: 100%;
                                 justify-content: center;
-                                
+
                             }
                         }
                     }
@@ -345,6 +361,34 @@
                     }
                 }
 
+            }
+        }
+    }
+
+    @media screen and (max-width:750px) {
+        & {
+            .container {
+                .content {
+                    .new {
+                        .list {
+                            .left {
+                                display: flex;
+                                justify-content: center;
+                                flex-wrap: wrap;
+
+                                .back {
+                                    width: 80%;
+
+                                    img {
+                                        margin: 0 auto;
+                                    }
+                                }
+
+                                border-right: 0;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
